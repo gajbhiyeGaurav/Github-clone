@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GitHub Clone</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <span class="logo">GitHub</span>
+      <input type="text" id="search" placeholder="Search repositories..."/>
+      <button id="searchBtn">Search</button>
+    </div>
+  </header>
+  <main>
+    <section id="repo-list">
+      <!-- Repo cards appear here -->
+    </section>
+    <section id="issue-section" class="hidden">
+      <h2 id="repo-title"></h2>
+      <ul id="issue-list"></ul>
+      <button id="backBtn">Back to repositories</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
