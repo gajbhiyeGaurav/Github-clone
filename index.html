@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GitHub Clone</title>
-  <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
-  <header>
-    <div class="navbar">
-      <span class="logo">GitHub</span>
-      <input type="text" id="search" placeholder="Search repositories..."/>
-      <button id="searchBtn">Search</button>
-    </div>
-  </header>
-  <main>
-    <section id="repo-list">
-      <!-- Repo cards appear here -->
-    </section>
-    <section id="issue-section" class="hidden">
-      <h2 id="repo-title"></h2>
-      <ul id="issue-list"></ul>
-      <button id="backBtn">Back to repositories</button>
-    </section>
-  </main>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Sidebar -->
+      <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none"
+        id="mySidebar">
+        <button onclick="w3_close()" class="w3-bar-item w3-large">Close
+          &times;</button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+      </div>
+
+      <div class="navbar">
+        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+        <span class="logo">GitHub</span>
+        <input type="text" id="search" placeholder="Search repositories..." />
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+    <main>
+      <section id="repo-list">
+        <!-- Repo cards appear here -->
+      </section>
+      <section id="issue-section" class="hidden">
+        <h2 id="repo-title"></h2>
+        <ul id="issue-list"></ul>
+        <button id="backBtn">Back to repositories</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
